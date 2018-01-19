@@ -14,7 +14,7 @@ class Room
     @door_names = { 1 => "Unknown", 2 => "Unknown", 3 => "Unknown", 4 => "Unknown"}
     @doors[1] = from_room
     @door_names[1] = from_room_name
-    @type = @room_types[rand(3)]
+    @type = @room_types[rand(5)]
     room_event(@type)
   end
 

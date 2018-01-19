@@ -16,6 +16,7 @@ module Types
   def empty
     puts "Empty"
   end
+
 end
 
 module Scripts
@@ -35,6 +36,12 @@ module Scripts
   end
 
   def invalid_choice
-    puts "Panic all you want, it won't do you any..."
+    puts "Panic all you want, it won't do you any good..."
   end
+
+  def omen_1
+    puts ""
+    puts ""
+  end
+
 end
