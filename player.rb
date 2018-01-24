@@ -10,4 +10,16 @@ class Character
     @items = {}
   end
 
+  def roll(number = 1) #Rolls a number of 6 sided die
+    roll_array = []
+    total = 0
+    number.times do |roll|
+      roll = rand[5] + 1
+      total += roll
+      roll_array << roll
+    end
+    puts "Your results: #{roll_array} for a total of #{total}."
+    return total
+  end
+
 end

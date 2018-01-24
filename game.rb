@@ -1,18 +1,13 @@
 $LOAD_PATH << '.'
-require 'modules.rb' # scripts and room event methods
-require 'rooms.rb' # room classes for random rooms, main hall, and upstairs landing
+require 'room_class.rb' #class for creating rooms
+require 'rooms.rb' #list of available rooms and attributes
 require 'player.rb' # class for player including current room and health stats
 
 class Game # contains the main game methods
   include Scripts #Scripts module from modules.rb, contains story scripts
 
   def initialize
-    @rooms = { #defines the rooms available for use on each floor
-        :upstairs => ["Master Bedroom", "A Guest Room", "Tower", "Balcony", "Observatory", "The Hole Room"],
-        :main => ["Kitchen", "Library", "Study", "Dining Room", "Living Room", "Vault"],
-        :downstairs => ["Furnace Room", "Chapel", "Storage Room", "The Pit"]
-    }
-
+    @rooms = rooms.rb
     @used_rooms = []
     @omen_count = 0 #Omens are a game event that change the story line. Once the omen count reaches 10 the haunt starts
     @player = Character.new

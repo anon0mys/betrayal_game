@@ -1,0 +1,57 @@
+
+class RoomList
+
+  attr_accessor :rooms
+
+  def initialize
+    @rooms = {
+      attic: ["Attic", "Upstairs", "Event",	[1], "When exiting, you must attempt a Speed roll of 3+. If you fail, lose 1 Might (but continue moving) (FAQ: Or stop moving and avoid the damage)."],
+      chapel: ["Chapel",	"Main",	"Event",	[1],	"Once per game, if you end your turn here, gain 1 Sanity."],
+      coal_chute: ["Coal Chute",	"Main",	"Empty", [1],	"One-way slide to Basement Landing."],
+      conservatory: ["Conservatory", "Main", "Event", [1]],
+      crypt_basement: ["Crypt",	"Basement",	"Event", [1],	"If you end your turn here, take 1 point of mental damage."],
+      graveyard: ["Graveyard", "Main", "Event",	[1], "When exiting, you must attempt a Sanity roll of 4+. If you fail, lose 1 Knowledge (but continue moving) (FAQ: Or stop moving and avoid the damage)."],
+      mystic_elevator: ["Mystic Elevator",	"Main",	"Empty", [1], "The whole mystic elevator thing..."],
+      pentagram: ["Pentagram Chamber",	"Basement",	"Omen",	[1],	"When exiting, you must attempt a Knowledge roll of 4+. If you fail, lose 1 sanity (but continue moving) (FAQ: Or stop moving and avoid the damage)."],
+      storeroom: ["Storeroom",	"Upstairs",	"Item",	[1]],
+      vault: ["Vault",	"Upstairs",	"Event",	[1],	"You can attempt a Knowledge roll of 6+ to open and empty the vault."],
+      balcony: ["Balcony", "Basement",	"Omen",	[2]],
+      bedroom: ["Bedroom", "Upstairs",	"Event", [2]],
+      catacombs: ["Catacombs", "Basement", "Omen", [2],	"You can attempt a Sanity roll of 6+ to cross. If you fail, you stop moving."],
+      chasm: ["Chasm",	"Basement",	"Empty",	[2],	"You can attempt a Speed roll of 3+ to cross. If you fail, you stop moving."],
+      dining_room: ["Dining Room",	"Main",	"Omen",	[2]],
+      gallery: ["Gallery",	"Upstairs",	"Omen",	[2],	"You can choose to fall to the Ballroom if its in the house. If you do, take 1 die of physical damage."],
+      gardnes: ["Gardens",	"Main",	"Event",	[2]],
+      grand_staircase: ["Grand Staircase",	"Basement",	"Empty",	[2],	"Leads to Upper Landing"],
+      gymnasium: ["Gymnasium",	"Upstairs",	"Omen",	[2],	"Once per game, if you end your turn here, gain 1 Speed."],
+      kitchen: ["Kitchen",	"Main",	"Omen",	[2]],
+      larder: ["Larder",	"Basement",	"Item",	[2],	"Once per game, if you end your turn here, gain 1 Might."],
+      library: ["Library",	"Main",	"Event",	[2],	"Once per game, if you end your turn here, gain 1 Knowledge."],
+      master: ["Master", "Bedroom",	"Upstairs",	"Omen",	[2]],
+      operating_laboratory: ["Operating", "Laboratory",	"Upstairs",	"Event", [2]],
+      organ_room: ["Organ", "Room",	"Main",	"Event", [2]],
+      research_laboratory: ["Research", "Laboratory",	"Upstairs",	"Event", [2]],
+      stairs_from_basement: ["Stairs From Basement",	"Basement",	"Empty",	[2],	"Leads to and from Foyer"],
+      statuary: ["Statuary", "Corridor",	"Main",	"Event",	[2]],
+      tower: ["Tower",	"Upstairs",	"Event",	[2],	"You can attempt a Might roll of 3+ to cross. If you fail, you stop moving."],
+      underground_lake: ["Underground Lake",	"Basement",	"Event",	[2]],
+      wine_cellar: ["Wine", "Cellar",	"Basement",	"Item",	[2]],
+      entrance_hall: ["Entrance Hall",	"Basement",	"Empty",	[3]],
+      furnace_room: ["Furnace Room",	"Basement",	"Omen",	[3],	"If you end your turn here, take 1 point of physical damage."],
+      game_room: ["Game Room",	"Main",	"Event",	[3]],
+      patio: ["Patio",	"Main",	"Event",	[3]],
+      abandoned_room: ["Abandoned Room",	"Main",	"Omen",	[4]],
+      ballroom: ["Ballroom",	"Main",	"Event",	[4]],
+      basement_landing: ["Basement Landing",	"Basement",	"Empty",	[4]],
+      bloody_room: ["Bloody Room",	"Main",	"Item",	[4]],
+      charred_room: ["Charred Room",	"Main",	"Omen",	[4]],
+      collapsed_room: ["Collapsed Room", "Main",	"Empty",	[4],	"You must attempt a Speed roll of 5+ to avoid falling. (Rules: Only the discoverer needs to make a Speed roll, others may avoid or fail intentionally.) If you fail the roll, draw a basement tile and put it in play. You fall there and take 1 die of physical damage."],
+      creaky_hallway: ["Creaky Hallway",	"Main",	"Empty",	[4]],
+      dusty_hallway: ["Dusty Hallway",	"Main",	"Empty",	[4]],
+      foyer: ["Foyer",	"Basement",	"Empty",	[4]],
+      junk_room: ["Junk Room",	"Main",	"Omen",	[4],	"When exiting, you must attempt a Might roll of 3+. If you fail, lose 1 Speed (but continue moving) (FAQ: Or stop moving and avoid the damage)."],
+      servants: ["Servants", "Quarters",	"Upstairs",	"Omen",	[4]],
+      upper_landing: ["Upper Landing",	"Upstairs",	"Empty",	[5]],
+      }
+  end
+end

@@ -1,24 +1,4 @@
 
-module Types
-
-  def omen
-    puts "Omen"
-  end
-
-  def event
-    puts "Event"
-  end
-
-  def item
-    puts "Item"
-  end
-
-  def empty
-    puts "Empty"
-  end
-
-end
-
 module Scripts
 
   def intro
@@ -37,11 +17,6 @@ module Scripts
 
   def invalid_choice
     puts "Panic all you want, it won't do you any good..."
-  end
-
-  def omen_1
-    puts ""
-    puts ""
   end
 
 end

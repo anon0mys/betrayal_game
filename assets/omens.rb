@@ -1,0 +1,4 @@
+
+module Omens
+
+end
